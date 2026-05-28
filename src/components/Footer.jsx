@@ -1,4 +1,5 @@
 import React from 'react';
+import { Github } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -6,7 +7,9 @@ export default function Footer() {
       <div className="container">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "20px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <div className="logo-icon" style={{ width: "32px", height: "32px", fontSize: "0.85rem", borderRadius: "8px" }}>⚡</div>
+            <div className="logo-icon" style={{ width: "32px", height: "32px", fontSize: "0.85rem", borderRadius: "8px", display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Github size={18} />
+            </div>
             <div style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
               <span>Asistente Técnico</span> — Proyecto de Informática 2026 | Desarrollado por Alex Jamachi
             </div>

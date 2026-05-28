@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Github } from 'lucide-react';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,9 @@ export default function Header() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`} id="header">
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link to="/" className="logo" onClick={() => setMenuOpen(false)}>
-            <div className="logo-icon">⚡</div>
+            <div className="logo-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Github size={20} />
+            </div>
             <div className="logo-text">Asistente<span>Técnico</span></div>
           </Link>
           
