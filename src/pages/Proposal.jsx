@@ -74,7 +74,10 @@ export default function Proposal() {
 
           {/* Comparison Chart */}
           <div className="chart-section reveal visible" style={{ marginTop: '80px' }}>
-            <h3 className="section-title" style={{ textAlign: "center" }}>Impacto Estadístico: Antes vs. Después del Asistente</h3>
+            <h3 className="section-title" style={{ textAlign: "center", marginBottom: '16px' }}>Impacto Estadístico Esperado</h3>
+            <p className="section-desc" style={{ textAlign: "center", margin: '0 auto 40px auto', maxWidth: '800px' }}>
+              Al automatizar la detección de cuellos de botella (RAM, latencia y conflictos de software), se proyecta una recuperación de 14 minutos en promedio por cada sesión. Esto no solo reduce la frustración técnica, sino que permite a los docentes enfocarse al 100% en la pedagogía, disparando la calidad y fluidez de la educación virtual.
+            </p>
             
             <div className="chart-container" style={{ position: 'relative', overflow: 'hidden' }}>
               {/* Background Grid for realism */}
